@@ -1,8 +1,14 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 
-function App() {
+interface AppProps {
+  name?: string;
+  setName?: (name: string) => void;
+  age?: number;
+}
+
+function App(props: AppProps) {
   return (
     <div className="App">
       <header className="App-header">
