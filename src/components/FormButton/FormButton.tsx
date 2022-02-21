@@ -7,7 +7,7 @@ interface FormButtonProps {
 const FormButton = (props: FormButtonProps) => {
     return (
         <button className="form-button" type="submit">
-            {props.children}
+            TESTING BUTTON
         </button>
     );
 };
