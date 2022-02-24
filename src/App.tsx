@@ -8,6 +8,7 @@ interface AppProps {
   age?: number;
 }
 
+
 function App(props: AppProps) {
   return (
     <div className="App">
