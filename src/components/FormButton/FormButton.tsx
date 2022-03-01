@@ -1,14 +1,17 @@
 import React from 'react';
+import './FormButton.scss'
 
 interface FormButtonProps {
-    children: React.ReactNode;
+    children?: React.ReactNode;
 }
 
 const FormButton = (props: FormButtonProps) => {
     return (
-        <button className="form-button" type="submit">
-            TESTING BUTTONNN
-        </button>
+        <div className='form-button'>
+            <button>
+                {props.children}
+            </button>
+        </div>
     );
 };
 

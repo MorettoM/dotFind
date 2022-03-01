@@ -1,30 +1,28 @@
 import React from 'react'
+import FormButton from '../FormButton/FormButton'
 import './Navbar.scss'
 
-const Header = () => {
+const Navbar = () => {
     return (
         <div className='navbar'>
             <div className='container'>
-            <div className='navbar-list'>
-            <div className='nav-logo'>
-                <a href='#'></a>
-            <img src='/logo-provisorio.png'></img>
-            </div>
-                <div className='nav-menu'>
-                <a href='#'>Work</a>
-                <a href='#'>Services</a>
-                <a href='#'>Our Company</a>
-                <a href='#'>Community</a>
+                <div className='navbar-list'>
+                    <div className='nav-logo'>
+                        <a href='#test'>
+                            <img alt="logo" src='/logo-provisorio.png'></img>
+                        </a>
+                    </div>
+                    <div className='nav-menu'>
+                        <a href='#test'>Work</a>
+                        <a href='#test'>Services</a>
+                        <a href='#test'>Our Company</a>
+                        <a href='#test'>Community</a>
+                    </div>
                 </div>
-            </div>
-            <div className='navbar_button'>
-                <button>
-                    Let's talk!
-                </button>
-            </div>
+                <FormButton>Lets talk!</FormButton>
             </div>
         </div>
     )
 }
 
-export default Header;
+export default Navbar;  
