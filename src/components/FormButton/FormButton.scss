@@ -16,3 +16,20 @@
         font-size: 16px;
     }
 }
+@media (max-width: 991px){
+    .form-button {
+        width: 40%;
+        button {
+            width: 100%;
+        }
+    }
+    }
+@media (max-width: 480px){
+.form-button {
+    margin: auto;
+    width: 100%;
+    button {
+        width: 100%;
+    }
+}
+}
