@@ -1,7 +1,7 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.scss';
 import Navbar from './components/Navbar/Navbar'
+import Header from './components/Header/Header'
 
 interface AppProps {
   name?: string;
@@ -14,6 +14,7 @@ function App(props: AppProps) {
     <div className="App">
       <header className="App-header">
         <Navbar />
+        <Header />
       </header>
     </div>
   );

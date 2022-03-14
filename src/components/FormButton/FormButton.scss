@@ -1,3 +1,35 @@
-.test {
-    color: red;
+@import '../../global.scss';
+
+.form-button {
+    display: flex;
+    text-align: center;
+    width: 140px;
+    button {
+        margin: auto;
+        justify-content: center;
+        height: 48px;
+        width: 140px;
+        background-color: $primary-color;
+        border: none;
+        color: #fff;
+        font-weight: 600;
+        font-size: 16px;
+    }
+}
+@media (max-width: 991px){
+    .form-button {
+        width: 40%;
+        button {
+            width: 100%;
+        }
+    }
+    }
+@media (max-width: 480px){
+.form-button {
+    margin: auto;
+    width: 100%;
+    button {
+        width: 100%;
+    }
+}
 }
