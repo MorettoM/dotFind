@@ -3,6 +3,8 @@ import FormButton from '../FormButton/FormButton'
 import './Navbar.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
+import "animate.css/animate.min.css";
+import ScrollAnimation from 'react-animate-on-scroll'
 
 const Navbar = () => {
     return (
@@ -18,7 +20,13 @@ const Navbar = () => {
                 </div>
             </div>
             <div className='container'>
-                <div className='navbar-list'>
+                <ScrollAnimation className='navbar-list'
+                    offset={100}
+                    animateIn={'animate__fadeInDown'}
+                    animateOnce={true}
+                    animatePreScroll={true}
+                >
+
                     <div className='nav-logo'>
                         <a href='#test'>
                             <img alt="logo" src='/logo-provisorio.png'></img>
@@ -31,7 +39,7 @@ const Navbar = () => {
                         <a href='#test'>Our Company</a>
                         <a href='#test'>Community</a>
                     </div>
-                </div>
+                </ScrollAnimation>
 
                 <FormButton>Lets talk!</FormButton>
             </div>
